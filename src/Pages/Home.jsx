@@ -2,6 +2,7 @@ import { useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Search from '../components/Search';
 import axios from 'axios';
+import Categories from './Categories';
 export default function Home(){
 
     return(
@@ -10,6 +11,7 @@ export default function Home(){
             
             {/* <input type="text" placeholder='Search any books' className='border-2 w-80 h-9'/> */}
             <Search />
+            <Link to={'/categories'}>Categories</Link>
         </div>
     )
 }

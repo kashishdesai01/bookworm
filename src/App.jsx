@@ -5,6 +5,8 @@ import Book from './Pages/Book'
 import Layout from './Pages/Layout'
 import Home from './Pages/Home'
 import Search from './components/Search'
+import Categories from './Pages/Categories'
+import Category from './Pages/Category'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
 
@@ -16,7 +18,8 @@ function App() {
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
         <Route path='book/:id' element={<Book/>}/>
-        <Route path='search' element={<Search/>}/>
+        <Route path='categories' element={<Categories/>}/>
+        <Route path='category/:name' element={<Category/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
